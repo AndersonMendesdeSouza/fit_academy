@@ -3,5 +3,5 @@ package com.apiAcadmi.academi.sexo;
 public enum Sexo {
 	MASCULINO, 
 	FEMININO,
-	PREFINONAODIZER,
+	PREFIRONAODIZER,
 }
