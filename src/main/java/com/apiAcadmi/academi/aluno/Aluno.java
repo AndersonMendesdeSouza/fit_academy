@@ -47,7 +47,7 @@ public class Aluno {
 		this.datamatricula = LocalDate.now();
 
 	}
-<<<<<<< HEAD
+
 
 	public void atualizarAluno(dadosAtualizarAluno dados) {
 		if (dados.nome() != null) {
@@ -72,8 +72,4 @@ public class Aluno {
 
 	}
 
-=======
-	
-	
->>>>>>> 6e89c0bbd0039920dfaf44cbb66ad859cf2a2374
 }
