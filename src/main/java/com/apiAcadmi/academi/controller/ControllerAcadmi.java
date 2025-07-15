@@ -1,5 +1,4 @@
 package com.apiAcadmi.academi.controller;
-
 import java.net.URI;
 import java.util.List;
 
