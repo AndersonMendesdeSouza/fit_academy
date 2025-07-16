@@ -17,8 +17,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.apiAcadmi.academi.aluno.Aluno;
 import com.apiAcadmi.academi.aluno.ListaDeAlunos;
-import com.apiAcadmi.academi.aluno.dadosAtualizarAluno;
-import com.apiAcadmi.academi.aluno.dadosCadastroAluno;
+import com.apiAcadmi.academi.dtos.dadosAtualizarAluno;
+import com.apiAcadmi.academi.dtos.dadosCadastroAluno;
 import com.apiAcadmi.academi.repository.alunoRepository;
 
 import jakarta.transaction.Transactional;

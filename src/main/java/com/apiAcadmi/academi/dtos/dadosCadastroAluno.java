@@ -1,4 +1,4 @@
-package com.apiAcadmi.academi.aluno;
+package com.apiAcadmi.academi.dtos;
 
 import java.time.LocalDate;
 

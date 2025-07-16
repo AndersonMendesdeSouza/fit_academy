@@ -2,6 +2,8 @@ package com.apiAcadmi.academi.aluno;
 
 import java.time.LocalDate;
 
+import com.apiAcadmi.academi.dtos.dadosAtualizarAluno;
+import com.apiAcadmi.academi.dtos.dadosCadastroAluno;
 import com.apiAcadmi.academi.sexo.Sexo;
 
 import jakarta.persistence.Entity;
