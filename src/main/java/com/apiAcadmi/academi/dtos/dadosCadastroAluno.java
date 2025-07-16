@@ -12,7 +12,7 @@ import jakarta.validation.constraints.Pattern;
 public record dadosCadastroAluno(
 		@NotBlank
 		String nome,
-		@NotBlank @Pattern(regexp = "\\d{3}\\.\\d{3}\\.\\d{3}\\.\\d{2}", message = "CPF deve estar no formato XXX.XXX.XXX-XX")
+		@NotBlank @Pattern(regexp = "\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}", message = "CPF deve estar no formato XXX.XXX.XXX-XX")
 		String cpf,
 		@NotBlank
         @Email
