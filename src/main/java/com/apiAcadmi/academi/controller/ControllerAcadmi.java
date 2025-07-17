@@ -30,6 +30,7 @@ import com.apiAcadmi.academi.repository.acessoRepository;
 import com.apiAcadmi.academi.repository.alunoRepository;
 
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/academia")
@@ -44,7 +45,7 @@ public class ControllerAcadmi {
 //	Cadastrar Aluno
 	@Transactional
 	@PostMapping
-	public ResponseEntity<ListaDeAlunos> cadastroAluno(@RequestBody dadosCadastroAluno dados, UriComponentsBuilder builder) {
+	public ResponseEntity<ListaDeAlunos> cadastroAluno(@Valid @RequestBody dadosCadastroAluno dados, UriComponentsBuilder builder) {
 		Aluno aluno = alunoRepository.save(new Aluno(dados));
 		
 		URI uri = builder.path("/academia/{id}").buildAndExpand(aluno.getId()).toUri();
@@ -64,7 +65,7 @@ public class ControllerAcadmi {
 //Atualizar aluno
 @Transactional
 @PutMapping
-public ResponseEntity<ListaDeAlunos> stualizarAluno(@RequestBody  dadosAtualizarAluno dados) {
+public ResponseEntity<ListaDeAlunos> stualizarAluno(@Valid @RequestBody  dadosAtualizarAluno dados) {
 	Aluno aluno = alunoRepository.getReferenceById(dados.id());
 	aluno.atualizarAluno(dados);
  
